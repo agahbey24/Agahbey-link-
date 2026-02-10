@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agahbey Portfolio | Photography & Graphic Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Background ya picha kali ya kazi za picha */
+            background: url('https://images.unsplash.com/photo-1452784444945-3f422708fe5e?q=80&w=2072') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Muonekano wa Kioo (Glassmorphism) */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(20px); 
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            padding: 40px 30px;
+            width: 90%;
+            max-width: 380px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            margin-bottom: 15px;
+            /* Hapa unaweza kuweka picha yako mwenyewe */
+            background: rgba(255,255,255,0.2);
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #e0e0e0;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        /* Kitufe cha Instagram (Gallery) */
+        .btn-gallery {
+            background: rgba(255, 255, 255, 0.9);
+            color: #222;
+        }
+
+        /* Kitufe cha WhatsApp */
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        .group-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            opacity: 0.8;
+            border-bottom: 1px solid transparent;
+        }
+
+        .group-link:hover {
+            opacity: 1;
+            border-bottom: 1px solid white;
+        }
+
+        .footer-text {
+            font-size: 10px;
+            margin-top: 30px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <img src="https://img.icons8.com/bubbles/200/camera.png" alt="Agahbey" class="profile-img">
+        
+        <h1>Agahbey</h1>
+        <p class="subtitle">Photographer & Graphic Designer</p>
+
+        <a href="https://www.instagram.com/agahbey25?igsh=dnN5NzNmcW11bGZk" target="_blank" class="btn btn-gallery">View Gallery</a>
+
+        <a href="https://wa.me/255618398220?text=Habari%20Agahbey,%20nahitaji%20huduma%20yako%20ya%20picha/design.%20Naomba%20maelekezo." target="_blank" class="btn btn-whatsapp">Agiza Huduma (Chat)</a>
+
+        <a href="https://chat.whatsapp.com/GeU759Iv2gq7I9hlqmAhay" target="_blank" class="group-link">Join My Creative Group</a>
+
+        <p class="footer-text">© 2024 Agahbey Creative Studio</p>
+    </div>
+
+</body>
+</html>
